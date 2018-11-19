@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
 import Teaser from './teaser'
 import Navigation from './navigation'
 import Icon from '../../assets/unikka.svg';

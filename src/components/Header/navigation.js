@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
-import Teaser from './teaser'
-import Icon from '../../assets/unikka.svg';
+import { Link } from 'gatsby'
 import headerStyles from "../../css/header.module.css"
 
 const Navigation = () => (

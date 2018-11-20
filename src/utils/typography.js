@@ -1,17 +1,17 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "20px",
   baseLineHeight: 1.666,
   headerFontFamily: [
+    "Segoe UI",
     "Avenir Next",
     "Helvetica Neue",
-    "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Georgia", "serif"],
+  bodyFontFamily: ["Segoe UI", "Georgia", "serif"],
 })
 
 export default typography

@@ -1,17 +1,15 @@
 import React from 'react'
-import Teaser from './teaser'
-import Navigation from './navigation'
-import Icon from '../../assets/unikka.svg';
-import headerStyles from "../../css/header.module.css"
+import headerStyles from '../../css/header.module.css'
+import {Navigation, Logo, Teaser} from './'
 
-const Header = ({ siteTitle, showHeaderTeaser }) => {
+const Header = ({ showHeaderTeaser }) => {
   const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
 
   return (
     <div className={headerStyles.header}>
       <div className={headerStyles.headerTop}>
         <div className={headerStyles.container}>
-          <Icon className={headerStyles.logo} />
+          <Logo />
           <Navigation />
         </div>
       </div>

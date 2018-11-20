@@ -15,6 +15,11 @@ const Navigation = () => (
         </Link>
       </li>
       <li>
+        <Link to="contact" style={headerStyles.navigationItem} activeClassName="active">
+          Kontakt
+        </Link>
+      </li>
+      <li>
         <Link to="impressum" style={headerStyles.navigationItem} activeClassName="active">
           Impressum
         </Link>

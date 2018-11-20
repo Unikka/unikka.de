@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import headerStyles from '../../css/header.module.css'
 import {Navigation, Logo, Teaser} from './'
 
@@ -7,14 +8,18 @@ const Header = ({ showHeaderTeaser }) => {
 
   return (
     <header className={headerStyles.header}>
-      <div className={headerStyles.headerTop}>
-        <div className={headerStyles.container}>
-          <Logo />
-          <Navigation />
+      <div className={headerStyles.headerOverlay}>
+        <div className={headerStyles.headerTop}>
+          <div className={headerStyles.container}>
+            <Link to="/">
+              <Logo />
+            </Link>
+            <Navigation />
+          </div>
         </div>
-      </div>
 
-      {teaserElement}
+        {teaserElement}
+      </div>
     </header>
   )
 }

@@ -3,8 +3,9 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout showHeaderTeaser={true} >
-    <h1>Home</h1>
-    <p>To be written.</p>
+    <section>
+      <h1>Was wir anbieten</h1>
+    </section>
   </Layout>
 )
 

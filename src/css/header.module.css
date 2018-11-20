@@ -6,6 +6,7 @@
   justify-content: flex-start;
   align-content: center;
   max-width: 960px;
+  margin: 0 auto;
 }
 
 .container:after {

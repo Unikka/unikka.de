@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { FeatureBoxItem, FeatureBoxContainer } from '../components/FeatureBox/'
+import { faNeos, faReact, faPhp } from '@fortawesome/free-brands-svg-icons'
 
 const IndexPage = () => (
   <Layout showHeaderTeaser={true} >
@@ -9,13 +10,16 @@ const IndexPage = () => (
       <FeatureBoxContainer>
         <FeatureBoxItem
             title='Mobile Apps'
-            description='Crossplattform Applikationen auf Basis von React-Native. ' />
+            description='Crossplattform Applikationen auf Basis von React-Native. '
+            icon={faReact} />
         <FeatureBoxItem
           title='Webseiten'
-          description='Internetpräsenzen auf Basis des Open-Source CMS Neos.' />
+          description='Internetpräsenzen auf Basis des Open-Source CMS Neos.'
+          icon={faNeos} />
         <FeatureBoxItem
           title='Web Applikationen'
-          description='Individuelle Umsetzung einer Webanwendung.' />
+          description='Individuelle Umsetzung einer Webanwendung.'
+          icon={faPhp} />
       </FeatureBoxContainer>
     </section>
   </Layout>

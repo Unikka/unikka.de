@@ -3,16 +3,10 @@
   display: -webkit-flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-content: center;
   max-width: 960px;
   margin: 0 auto;
-}
-
-.container:after {
-  display: block;
-  content: " ";
-  flex: 999 999 auto;
 }
 
 .header {
@@ -30,8 +24,12 @@
   background: rgba(60,60,60,.5);
 }
 
+.logoContainer {
+  flex: 1;
+}
+
 .logo {
-  flex: 0 0 auto;
+  display: block;
   height: 40px;
   margin: 5px 0;
 }
@@ -98,13 +96,14 @@
 }
 
 .teaser p {
-  margin: 20px 0;
   color: #fff;
 }
 
 .teaser a.teaserButton {
+  display: inline-block;
   border: 2px solid #89C53F;
   padding: 10px 40px;
+  margin-top: 20px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1em;

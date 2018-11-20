@@ -6,7 +6,7 @@ const Header = ({ showHeaderTeaser }) => {
   const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
 
   return (
-    <div className={headerStyles.header}>
+    <header className={headerStyles.header}>
       <div className={headerStyles.headerTop}>
         <div className={headerStyles.container}>
           <Logo />
@@ -15,7 +15,7 @@ const Header = ({ showHeaderTeaser }) => {
       </div>
 
       {teaserElement}
-    </div>
+    </header>
   )
 }
 

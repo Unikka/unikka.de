@@ -4,17 +4,21 @@ import Navigation from './navigation'
 import Icon from '../../assets/unikka.svg';
 import headerStyles from "../../css/header.module.css"
 
-const Header = ({ siteTitle }) => (
-  <div className={headerStyles.header}>
-    <div className={headerStyles.headerTop}>
-      <div className={headerStyles.container}>
-        <Icon className={headerStyles.logo} />
-        <Navigation />
-      </div>
-    </div>
+const Header = ({ siteTitle, showHeaderTeaser }) => {
+  const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
 
-    <Teaser/>
-  </div>
-)
+  return (
+    <div className={headerStyles.header}>
+      <div className={headerStyles.headerTop}>
+        <div className={headerStyles.container}>
+          <Icon className={headerStyles.logo} />
+          <Navigation />
+        </div>
+      </div>
+
+      {teaserElement}
+    </div>
+  )
+}
 
 export default Header

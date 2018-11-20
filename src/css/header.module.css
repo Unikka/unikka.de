@@ -18,6 +18,11 @@
 .header {
   background: url(../images/header_image.jpg) no-repeat top center;
   background-size: cover;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.headerOverlay {
+  background: rgba(20,20,30,.5)
 }
 
 .headerTop {
@@ -74,4 +79,25 @@
 .teaserContentWrap {
   max-height: 820px;
   padding: 100px 0;
+}
+
+.teaser h1 {
+  margin-top: 12px;
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.teaser h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #89C53F;
+  letter-spacing: 0.1em;
+}
+
+.teaser p {
+  margin-top: 8px;
+  color: #fff;
 }

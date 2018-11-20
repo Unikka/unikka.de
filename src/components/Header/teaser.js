@@ -5,9 +5,12 @@ const Teaser = () => (
   <div className={headerStyles.container}>
     <div className={headerStyles.teaser}>
         <div className={headerStyles.teaserContentWrap}>
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
+            <h3>Ihr Partner für Digitale Lösungen</h3>
+            <h1>Sie möchten eine App erstellen lassen?</h1>
+            <p>
+              Wir bieten Ihnen Beratung, Planung und Umsetzung aus einer Hand.
+              Dabei setzen wir auf bewerte Techniken.
+            </p>
         </div>
     </div>
   </div>

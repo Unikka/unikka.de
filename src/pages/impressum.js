@@ -8,17 +8,20 @@ const Imprint = () => (
       <h1>Impressum</h1>
 
       <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-      <p>
-        Markus G&uuml;nther<br />
-        unikka<br />
-        Bahnhofsiedlung 5<br />
-        39365 Sommersdorf OT Marienborn
+      <p itemscope itemtype="http://schema.org/Person">
+        unikka<br/>
+        <span itemprop="name">Markus G&uuml;nther</span>
+
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Bahnhofsiedlung 5</span><br/>
+          <span itemprop="postalCode">39365</span> <span itemprop="addressLocality">Sommersdorf OT Marienborn</span>,
+        </div>
       </p>
 
       <h2>Kontakt</h2>
-      <p>
-        Telefon: +49 (0) 160 4623511<br />
-        E-Mail: info@unikka.de
+      <p itemtype="http://schema.org/Person">
+        Telefon: <span itemprop="telephone">+49 (0) 160 4623511</span><br />
+        E-Mail: <a href="mailto:info@unikka.de" itemprop="email">info@unikka.de</a>
       </p>
 
       <h3>Haftung f&uuml;r Inhalte</h3>
@@ -27,7 +30,7 @@ const Imprint = () => (
       <h3>Urheberrecht</h3>
       <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
       <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-      <p>Quelle: <Link to="https://www.e-recht24.de/impressum-generator.html" >https://www.e-recht24.de/impressum-generator.html</Link></p>
+      <p>Quelle: <Link to="https://www.e-recht24.de/impressum-generator.html" >https://www.e-recht24.de</Link></p>
     </section>
   </Layout>
 )

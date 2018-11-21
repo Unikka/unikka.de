@@ -14,7 +14,7 @@ const Imprint = () => (
 
         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <span itemprop="streetAddress">Bahnhofsiedlung 5</span><br/>
-          <span itemprop="postalCode">39365</span> <span itemprop="addressLocality">Sommersdorf OT Marienborn</span>,
+          <span itemprop="postalCode">39365</span> <span itemprop="addressLocality">Sommersdorf OT Marienborn</span>
         </div>
       </p>
 

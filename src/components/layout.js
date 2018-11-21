@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import { Header } from './Header'
 import contentStyles from '../css/content.module.css'
+import icon32 from '../images/favicon-32x32.png'
+import icon16 from '../images/favicon-16x16.png'
+import appleTouchIcon from '../images/apple-touch-icon.png'
 import './layout.css'
 
 const Layout = ({ children, showHeaderTeaser }) => (
@@ -26,6 +29,11 @@ const Layout = ({ children, showHeaderTeaser }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          link={[
+            { rel: 'icon', type: 'image/png', href: `${icon32}`, sizes: '32x32' },
+            { rel: 'icon', type: 'image/png', href: `${icon16}`, sizes: '16x16' },
+            { rel: 'apple-touch-icon', type: 'image/png', href: `${appleTouchIcon}`, sizes: '180x180' }
+        ]}
         >
           <html lang="en" />
         </Helmet>

@@ -2,17 +2,17 @@
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-}
 
-.featureBox {
-  text-align: center;
-  padding: 40px 20px;
-  border: 1px solid #EEE;
-  flex: 1 0 calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
-}
+  .featureBox {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px solid #EEE;
+    flex: 1 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
 
-.featureBoxIcon {
-  display: inline-block;
-  margin-bottom: 20px;
+    .featureBoxIcon {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
 }

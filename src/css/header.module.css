@@ -72,31 +72,31 @@
 
 .teaser {
   color: #fff;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #89C53F;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  p {
+    color: #fff;
+  }
 }
 
 .teaserContentWrap {
   max-height: 820px;
   padding: 80px 0;
-}
-
-.teaser h1 {
-  font-size: 60px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.teaser h3 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #89C53F;
-  letter-spacing: 0.1em;
-  margin: 0;
-}
-
-.teaser p {
-  color: #fff;
 }
 
 .teaser a.teaserButton {

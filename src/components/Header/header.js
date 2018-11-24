@@ -2,7 +2,7 @@ import React from 'react'
 import headerStyles from '../../css/header.module.css'
 import {Navigation, Logo, Teaser} from '.'
 
-const Header = ({ showHeaderTeaser }) => {
+const Header = ({ showHeaderTeaser, menuLinks }) => {
   const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
 
   return (
@@ -11,7 +11,7 @@ const Header = ({ showHeaderTeaser }) => {
         <div className={headerStyles.headerTop}>
           <div className={headerStyles.container}>
             <Logo />
-            <Navigation />
+            <Navigation items={menuLinks} />
           </div>
         </div>
 

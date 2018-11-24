@@ -1,6 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Unikka - IHR PARTNER FÜR DIGITALE LÖSUNGEN',
+    menuLinks:[
+      {
+        name:'Home',
+        link:'/'
+      },
+      {
+        name:'Blog',
+        link:'/blog'
+      },
+      {
+        name:'Contact',
+        link:'/contact'
+      },
+      {
+        name:'Impressum',
+        link:'/impressum'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-postcss`,

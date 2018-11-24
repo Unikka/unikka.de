@@ -17,6 +17,10 @@ const Layout = ({ children, showHeaderTeaser }) => (
         site {
           siteMetadata {
             title
+            menuLinks {
+              name
+              link
+            }
           }
         }
       }
@@ -37,7 +41,7 @@ const Layout = ({ children, showHeaderTeaser }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} showHeaderTeaser={showHeaderTeaser} />
+        <Header showHeaderTeaser={showHeaderTeaser} menuLinks={data.site.siteMetadata.menuLinks} />
         <section
           className={contentStyles.contentSection}
         >

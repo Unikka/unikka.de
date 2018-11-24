@@ -10,13 +10,24 @@
 }
 
 .header {
-  background: url(../images/header_image.jpg) no-repeat top center;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+  .headerImage {
+    position: absolute !important;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    max-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
 }
 
 .headerOverlay {
-  background: rgba(20,20,30,.5)
+  background: rgba(20,20,30,.5);
 }
 
 .headerTop {

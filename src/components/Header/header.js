@@ -1,6 +1,6 @@
 import React from 'react'
 import headerStyles from '../../css/header.module.css'
-import {Navigation, Logo, Teaser} from '.'
+import {Navigation, Logo, Teaser, HeaderImage} from '.'
 
 const Header = ({ showHeaderTeaser, menuLinks }) => {
   const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
@@ -17,6 +17,7 @@ const Header = ({ showHeaderTeaser, menuLinks }) => {
 
         {teaserElement}
       </div>
+      <HeaderImage />
     </header>
   )
 }

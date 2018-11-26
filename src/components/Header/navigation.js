@@ -10,8 +10,8 @@ import headerStyles from "../../css/header.module.css"
  */
 const renderMenuListItems = items => {
   return items.map(link => (
-    <li key={link.name} style={headerStyles.navigationItem} activeClassName="active">
-      <Link to={link.link}>{link.name}</Link>
+    <li key={link.name} style={headerStyles.navigationItem}>
+      <Link to={link.link} activeClassName="active">{link.name}</Link>
     </li>)
   );
 }

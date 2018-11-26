@@ -70,6 +70,8 @@
     user-select: none;
     transition: all 0.5s;
     cursor: pointer;
+    border: none;
+    border-radius: 2px;
 
     &:hover {
       background-color: #70AC26;

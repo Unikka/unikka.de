@@ -6,11 +6,22 @@
   .formGroup {
     display: flex;
     flex-flow: column;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     label {
       max-width: 100%;
       margin-bottom: 5px;
+    }
+  }
+
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    .formGroup {
+      flex: 1 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
     }
   }
 
@@ -44,7 +55,6 @@
     display: block;
     background-color: #89C53F;
     padding: 10px 40px;
-    margin-top: 20px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;

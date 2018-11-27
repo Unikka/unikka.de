@@ -17,15 +17,14 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-sharp": "^2.0.7",
-    "gatsby-plugin-typography": "^2.2.1",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-sharp": "^2.1.4",
     "postcss-nested": "^4.1.0",
     "postcss-preset-env": "^6.4.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.13"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"

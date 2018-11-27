@@ -23,18 +23,19 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif', 'Open Sans', 'Roboto', 'Ubuntu']
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
           rule: {
             include: /assets/
           }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-        omitGoogleFont: true
       }
     },
     'gatsby-plugin-react-helmet',

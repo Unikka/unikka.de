@@ -16,12 +16,28 @@ const renderMenuListItems = items => {
   );
 }
 
+const renderMenuToggle = () => {
+  return (
+    <div className={headerStyles.menuToogle}>
+      <label>
+          <input type="checkbox" className={headerStyles.openMenu}/>
+          <div className={headerStyles.spinner}></div>
+          <div className={headerStyles.spinner}></div>
+          <div className={headerStyles.spinner}></div>
+      </label>
+    </div>
+  );
+}
+
 const Navigation = (items) => {
   const menuListItems = renderMenuListItems(items.items);
   return (
-    <ul className={headerStyles.navigation}>
-      {menuListItems}
-    </ul>
+    <nav>
+      {renderMenuToggle()}
+      <ul className={headerStyles.navigation}>
+        {menuListItems}
+      </ul>
+    </nav>
   )
 }
 

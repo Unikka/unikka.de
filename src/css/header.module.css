@@ -7,6 +7,7 @@
   align-content: center;
   max-width: 960px;
   margin: 0 auto;
+  padding-left: 1.5rem;
 }
 
 .header {
@@ -47,8 +48,7 @@
 
 .navigation {
   flex: 0 0 auto;
-  display: flex;
-  display: -webkit-flex;
+  display: none;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
@@ -139,17 +139,17 @@
   color: #fff;
 
   h1 {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
-    line-height: 3rem;
+    line-height: 2rem;
     font-family: 'Ubuntu', 'Droid Sans', 'Helvetica', 'serif';
     margin-top: 0;
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     color: #89C53F;
@@ -180,4 +180,26 @@
 .teaserContentWrap {
   max-height: 820px;
   padding: 80px 0;
+}
+
+@media only screen and (min-width: 991px) {
+  .menuToogle {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    display: -webkit-flex;
+  }
+
+  .teaser {
+    h1 {
+      font-size: 60px;
+      line-height: 3rem;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
 }

@@ -5,17 +5,7 @@ import headerStyles from '../../css/header.module.css'
 
 const HeaderImage = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "header_image.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
+    query={headerImage}
     render={data => (
       <div className={headerStyles.headerImage}>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
@@ -23,5 +13,18 @@ const HeaderImage = () => (
     )}
   />
 )
+
+
+export const headerImage = graphql`
+  query {
+    placeholderImage: file(relativePath: { eq: "home-office.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default HeaderImage

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'gatsby'
 import headerStyles from "../../css/header.module.css"
 
@@ -16,11 +16,11 @@ const renderMenuListItems = items => {
   );
 }
 
-const renderMenuToggle = () => {
+const renderMenuToggle = (open, handleClick) => {
   return (
     <div className={headerStyles.menuToogle}>
       <label>
-          <input type="checkbox" className={headerStyles.openMenu}/>
+          <input type="checkbox" className={headerStyles.openMenu} onChange={() => handleClick(!open)}/>
           <div className={headerStyles.spinner}></div>
           <div className={headerStyles.spinner}></div>
           <div className={headerStyles.spinner}></div>
@@ -30,11 +30,12 @@ const renderMenuToggle = () => {
 }
 
 const Navigation = (items) => {
+  const [open, setOpen] = useState(false);
   const menuListItems = renderMenuListItems(items.items);
   return (
     <nav>
-      {renderMenuToggle()}
-      <ul className={headerStyles.navigation}>
+      {renderMenuToggle(open, (value) => setOpen(value))}
+      <ul className={`${headerStyles.navigation} ${open ? '' : headerStyles.navigationHide}`} >
         {menuListItems}
       </ul>
     </nav>

@@ -7,20 +7,33 @@ const Imprint = () => (
       <h1>Impressum</h1>
 
       <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-      <p itemscope itemtype="http://schema.org/Person">
+      <p itemScope itemType="http://schema.org/Person">
         unikka<br/>
-        <span itemprop="name">Markus G&uuml;nther</span>
+        <span itemProp="name">Markus G&uuml;nther</span><br/>
 
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">Bahnhofsiedlung 5</span><br/>
-          <span itemprop="postalCode">39365</span> <span itemprop="addressLocality">Sommersdorf OT Marienborn</span>
-        </div>
+        <span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+          <span itemProp="streetAddress">Bahnhofsiedlung 5</span><br/>
+          <span itemProp="postalCode">39365</span> <span itemProp="addressLocality">Sommersdorf OT Marienborn</span>
+        </span>
+      </p>
+
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
+        USt-IdNr.: DE323415889
       </p>
 
       <h2>Kontakt</h2>
-      <p itemtype="http://schema.org/Person">
-        Telefon: <span itemprop="telephone">+49 (0) 160 4623511</span><br />
-        E-Mail: <a href="mailto:info@unikka.de" itemprop="email">info@unikka.de</a>
+      <p itemType="http://schema.org/Person">
+        Mobil: <span itemProp="telephone">+49 (0) 160 4623511</span><br />
+        Telefon: <span itemProp="telephone">+49 (0) 39400 999795</span><br />
+        E-Mail: <a href="mailto:info@unikka.de" itemProp="email">info@unikka.de</a>
+      </p>
+
+      <h3>Berufshaftpflichtversicherung</h3>
+      <p>
+        Hiscox Europe Underwriting Limited<br />
+        Arnulfstr. 31<br />
+        80636 München
       </p>
 
       <h3>Haftung f&uuml;r Inhalte</h3>

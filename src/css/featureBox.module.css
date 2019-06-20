@@ -6,13 +6,33 @@
   .featureBox {
     text-align: center;
     padding: 40px 20px;
+    margin-bottom: 20px;
     border: 1px solid #EEE;
-    flex: 1 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 1 0 calc(100% - 20px);
+    max-width: 100%;
 
     .featureBoxIcon {
       display: inline-block;
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .featureBoxContainer {
+    .featureBox {
+      flex: 1 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .featureBoxContainer {
+    .featureBox {
+      flex: 1 0 calc(33.3333% - 20px);
+      max-width: calc(33.3333% - 20px);
+      margin-bottm: 0;
     }
   }
 }

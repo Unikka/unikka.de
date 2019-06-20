@@ -20,8 +20,8 @@
     flex-flow: row wrap;
 
     .formGroup {
-      flex: 1 0 calc(50% - 20px);
-      max-width: calc(50% - 20px);
+      flex: 1 0 calc(100% - 20px);
+      max-width: calc(100% - 20px);
     }
   }
 
@@ -79,6 +79,17 @@
 
     svg {
       margin-right: 10px
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    .formRow {
+      .formGroup {
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
     }
   }
 }

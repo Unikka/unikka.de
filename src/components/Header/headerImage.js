@@ -3,33 +3,30 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import headerStyles from '../../css/header.module.css'
 
-const HeaderImage = () => (
-  <StaticQuery
-    query={window.innerWidth < 420 ? portraitHeaderImage : headerImage}
-    render={data => (
-      <div className={headerStyles.headerImage}>
-        <Img fluid={data.headerImage.childImageSharp.fluid} />
-      </div>
-    )}
-  />
-)
+const HeaderImage = () => {
+  const imageKey = typeof window !== 'undefined' && window.innerWidth < 420 ? 'portraitHeaderImage' : 'landscapeHeaderImage';
+  return (
+    <StaticQuery
+      query={headerImages}
+      render={data => (
+        <div className={headerStyles.headerImage}>
+          <Img fluid={data[imageKey].childImageSharp.fluid} />
+        </div>
+      )}
+    />
+  )
+}
 
-
-export const headerImage = graphql`
+export const headerImages = graphql`
   query {
-    headerImage: file(relativePath: { eq: "home-office.jpg" }) {
+    landscapeHeaderImage: file(relativePath: { eq: "home-office.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid
         }
       }
-    }
-  }
-`;
-
-export const portraitHeaderImage = graphql`
-  query {
-    headerImage: file(relativePath: { eq: "home-office-square.jpg" }) {
+    },
+    portraitHeaderImage: file(relativePath: { eq: "home-office-square.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid

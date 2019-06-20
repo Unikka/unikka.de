@@ -11,7 +11,7 @@ module.exports = {
         link:'/blog'
       },
       {
-        name:'Contact',
+        name:'Kontakt',
         link:'/contact'
       },
       {

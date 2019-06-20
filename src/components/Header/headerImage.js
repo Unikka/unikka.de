@@ -5,10 +5,10 @@ import headerStyles from '../../css/header.module.css'
 
 const HeaderImage = () => (
   <StaticQuery
-    query={headerImage}
+    query={window.innerWidth < 420 ? portraitHeaderImage : headerImage}
     render={data => (
       <div className={headerStyles.headerImage}>
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <Img fluid={data.headerImage.childImageSharp.fluid} />
       </div>
     )}
   />
@@ -17,7 +17,19 @@ const HeaderImage = () => (
 
 export const headerImage = graphql`
   query {
-    placeholderImage: file(relativePath: { eq: "home-office.jpg" }) {
+    headerImage: file(relativePath: { eq: "home-office.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+
+export const portraitHeaderImage = graphql`
+  query {
+    headerImage: file(relativePath: { eq: "home-office-square.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid

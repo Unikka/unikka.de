@@ -140,7 +140,7 @@
   color: #fff;
 
   h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
@@ -150,7 +150,7 @@
   }
 
   h3 {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     color: #89C53F;
@@ -159,6 +159,7 @@
   }
 
   p {
+    font-size: 14px;
     color: #fff;
   }
 
@@ -180,8 +181,23 @@
 
 .teaserContentWrap {
   max-height: 820px;
-  padding: 80px 0;
+  padding: 20px 0;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .teaserContentWrap {
+    padding: 40px 0;
+  }
+
+  .teaser {
+    h1 {
+      font-size: 30px;
+      line-height: 2rem;
+    }
+  }
+}
+
 
 @media only screen and (min-width: 991px) {
   .menuToogle {
@@ -193,6 +209,10 @@
     display: -webkit-flex;
   }
 
+  .teaserContentWrap {
+    padding: 80px 0;
+  }
+
   .teaser {
     h1 {
       font-size: 60px;
@@ -200,6 +220,10 @@
     }
 
     h3 {
+      font-size: 16px;
+    }
+
+    p {
       font-size: 16px;
     }
   }

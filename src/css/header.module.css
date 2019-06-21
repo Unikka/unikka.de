@@ -41,6 +41,10 @@
   flex: 1;
 }
 
+nav {
+  flex: 1;
+}
+
 .logo {
   display: block;
   height: 40px;

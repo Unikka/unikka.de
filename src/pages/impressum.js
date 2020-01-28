@@ -24,8 +24,8 @@ const Imprint = () => (
 
       <h2>Kontakt</h2>
       <p itemType="http://schema.org/Person">
-        Mobil: <span itemProp="telephone">+49 (0) 160 4623511</span><br />
-        Telefon: <span itemProp="telephone">+49 (0) 39400 999795</span><br />
+        Mobil: <a href="tel:+491604623511"><span itemProp="telephone">+49 (0) 160 4623511</span></a><br />
+        Telefon: <a href="tel:+4939400920624"><span itemProp="telephone">+49 (0) 39400 920624</span></a><br />
         E-Mail: <a href="mailto:info@unikka.de" itemProp="email">info@unikka.de</a>
       </p>
 

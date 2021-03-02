@@ -11,7 +11,7 @@ import '../../assets/sass/layout.scss';
  */
 const renderMenuListItems = items => {
   return items.map(link => (
-    <li key={link.name} style="navigationItem">
+    <li key={link.name} className="navigationItem">
       <Link to={link.link} activeClassName="active">{link.name}</Link>
     </li>)
   );
@@ -36,7 +36,7 @@ const Navigation = (items) => {
   return (
     <nav>
       {renderMenuToggle(open, (value) => setOpen(value))}
-      <ul className={`$navigation} ${open ? '' : 'navigationHide'}`} >
+      <ul className={`navigation ${open ? '' : 'navigationHide'}`} >
         {menuListItems}
       </ul>
     </nav>

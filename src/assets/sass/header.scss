@@ -34,6 +34,7 @@
   &.with-teaser {
     .headerImage {
       height: 100%;
+      max-height: 36.5rem;
     }
   }
 }
@@ -266,6 +267,13 @@ nav {
   .teaserContentWrap {
     padding: 80px 0;
   }
+
+  .header{
+    .headerImage {
+      height: 6.15rem
+    }
+  }
+  
 
   .teaser {
     h1 {

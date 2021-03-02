@@ -24,6 +24,7 @@ const Header = ({ showHeaderTeaser, menuLinks }) => {
         alt="Nice desk with a notebook"
         placeholder="blurred"
         layout="fullWidth"
+        formats={['auto', 'webp', 'avif']}
         transformOptions={{cropFocus: 'attention', fit: 'cover'}}
         className="headerImage"
       />

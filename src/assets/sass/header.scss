@@ -11,24 +11,31 @@
 }
 
 .header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   position: relative;
   overflow: visible;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
   .headerImage {
-    position: absolute !important;
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    margin: auto; 
-    max-height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    grid-column: 1 / 7;
+    grid-row: 1;
+    z-index: 1;
+    height: 5rem
   }
-}
 
-.headerOverlay {
-  background: rgba(20,20,30,.5);
+  .headerOverlay {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    background: rgba(20,20,30,.5);
+    z-index: 10;
+  }
+
+  &.with-teaser {
+    .headerImage {
+      height: 100%;
+    }
+  }
 }
 
 .headerTop {

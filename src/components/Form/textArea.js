@@ -1,12 +1,13 @@
 import React from 'react'
-import formStyles from '../../css/forms.module.css'
+import '../../assets/sass/layout.scss';
+
 
 const TextArea = ({name, label, rows}) => (
-  <div className={formStyles.formGroup}>
+  <div className="formGroup">
     <label>
       {label}
     </label>
-    <textarea name={name} className={formStyles.formControl} rows={rows} />
+    <textarea name={name} className="formControl" rows={rows} />
   </div>
 )
 

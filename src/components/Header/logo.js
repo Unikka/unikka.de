@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import headerStyles from '../../css/header.module.css'
 import Icon from '../../assets/unikka.svg';
 
+import '../../assets/sass/layout.scss';
+
 const Logo = () => (
-  <div className={headerStyles.logoContainer} >
+  <div className="logoContainer" >
     <Link to="/">
-      <Icon className={headerStyles.logo} />
+      <Icon className="logo" />
     </Link>
   </div>
 )

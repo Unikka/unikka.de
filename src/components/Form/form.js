@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
-import formStyles from '../../css/forms.module.css'
+
+import '../../assets/sass/layout.scss';
 
 const Form = ({ name, children }) => {
   const submitForm = async event => {
@@ -40,7 +41,7 @@ const Form = ({ name, children }) => {
       action="https://formspree.io/mwkpzklw"
       name={name}
       method="POST"
-      className={formStyles.form}
+      className="form"
       onSubmit={submitForm}
     >
       <input type="hidden" name="form-name" value={name} />

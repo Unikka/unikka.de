@@ -4,11 +4,9 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import { Header } from './Header'
-import contentStyles from '../css/content.module.css'
 import icon32 from '../images/favicon-32x32.png'
 import icon16 from '../images/favicon-16x16.png'
 import appleTouchIcon from '../images/apple-touch-icon.png'
-import './layout.css'
 
 const Layout = ({ children, showHeaderTeaser }) => (
   <StaticQuery
@@ -43,7 +41,7 @@ const Layout = ({ children, showHeaderTeaser }) => (
         </Helmet>
         <Header showHeaderTeaser={showHeaderTeaser} menuLinks={data.site.siteMetadata.menuLinks} />
         <section
-          className={contentStyles.contentSection}
+          className="contentSection"
         >
           {children}
         </section>

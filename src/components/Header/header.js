@@ -1,15 +1,17 @@
 import React from 'react'
-import headerStyles from '../../css/header.module.css'
-import {Navigation, Logo, Teaser, HeaderImage} from '.'
+import { StaticImage } from 'gatsby-plugin-image'
+import {Navigation, Logo, Teaser} from '.'
+
+import '../../assets/sass/layout.scss';
 
 const Header = ({ showHeaderTeaser, menuLinks }) => {
   const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
 
   return (
-    <header className={headerStyles.header}>
-      <div className={headerStyles.headerOverlay}>
-        <div className={headerStyles.headerTop}>
-          <div className={headerStyles.container}>
+    <header className={`header ${showHeaderTeaser ? 'with-teaser' : ''}`}>
+      <div className="headerOverlay">
+        <div className="headerTop">
+          <div className="container">
             <Logo />
             <Navigation items={menuLinks} />
           </div>
@@ -17,7 +19,14 @@ const Header = ({ showHeaderTeaser, menuLinks }) => {
 
         {teaserElement}
       </div>
-      <HeaderImage />
+      <StaticImage
+        src="../../images/home-office.jpg"
+        alt="Nice desk with a notebook"
+        placeholder="blurred"
+        layout="fullWidth"
+        transformOptions={{cropFocus: 'attention', fit: 'cover'}}
+        className="headerImage"
+      />
     </header>
   )
 }

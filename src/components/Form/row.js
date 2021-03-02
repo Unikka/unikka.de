@@ -1,8 +1,8 @@
 import React from 'react'
-import formStyles from '../../css/forms.module.css'
+import '../../assets/sass/layout.scss';
 
 const Row = ({children}) => (
-  <div className={formStyles.formRow}>{children}</div>
+  <div className="formRow">{children}</div>
 )
 
 export default Row

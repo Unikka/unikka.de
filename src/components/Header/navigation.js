@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby'
-import headerStyles from "../../css/header.module.css"
+
+import '../../assets/sass/layout.scss';
 
 /**
  * Render markdown for the incoming list items. A item has a name and
@@ -10,7 +11,7 @@ import headerStyles from "../../css/header.module.css"
  */
 const renderMenuListItems = items => {
   return items.map(link => (
-    <li key={link.name} style={headerStyles.navigationItem}>
+    <li key={link.name} style="navigationItem">
       <Link to={link.link} activeClassName="active">{link.name}</Link>
     </li>)
   );
@@ -18,12 +19,12 @@ const renderMenuListItems = items => {
 
 const renderMenuToggle = (open, handleClick) => {
   return (
-    <div className={headerStyles.menuToogle}>
+    <div className="menuToogle">
       <label>
-          <input type="checkbox" className={headerStyles.openMenu} onChange={() => handleClick(!open)}/>
-          <div className={headerStyles.spinner}></div>
-          <div className={headerStyles.spinner}></div>
-          <div className={headerStyles.spinner}></div>
+          <input type="checkbox" className="openMenu" onChange={() => handleClick(!open)}/>
+          <div className="spinner"></div>
+          <div className="spinner"></div>
+          <div className="spinner"></div>
       </label>
     </div>
   );
@@ -35,7 +36,7 @@ const Navigation = (items) => {
   return (
     <nav>
       {renderMenuToggle(open, (value) => setOpen(value))}
-      <ul className={`${headerStyles.navigation} ${open ? '' : headerStyles.navigationHide}`} >
+      <ul className={`$navigation} ${open ? '' : 'navigationHide'}`} >
         {menuListItems}
       </ul>
     </nav>

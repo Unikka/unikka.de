@@ -1,137 +1,133 @@
+@import 'forms';
+@import 'header';
+@import 'featureBox';
+@import 'content';
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   font-family: 'Droid Sans', 'Helvetica', 'serif';
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
 }
-audio,
-canvas,
-progress,
-video {
+
+audio, canvas, progress, video {
   display: inline-block;
 }
+
 audio:not([controls]) {
   display: none;
   height: 0;
 }
+
 progress {
   vertical-align: baseline;
 }
-[hidden],
-template {
+
+[hidden], template {
   display: none;
 }
+
 a {
   color: #89C53F;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+
+  &:active, &:hover {
+    outline-width: 0;
+  }
+
+  &.active {
+    color: #89C53F !important;
+  }
 }
-a:active,
-a:hover {
-  outline-width: 0;
-}
-a.active {
-  color: #89C53F !important;
-}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-b,
-mark {
+
+b, mark {
   background-color: #ff0;
   color: #000;
 }
-sub,
-sup {
+
+sub, sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -.25em;
 }
+
 sup {
   top: -.5em;
 }
+
 img {
   border-style: none;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
-code,
-kbd,
-pre,
-figure {
+
+code, kbd, pre, figure {
   margin: 1em 40px;
 }
+
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+
+button, input, optgroup, select, textarea {
   font: inherit;
   margin: 0;
 }
+
 optgroup {
   font-weight: 700;
 }
-button,
-input {
+
+button, input {
   overflow: visible;
 }
-button,
-select {
+
+button, select {
   text-transform: none;
 }
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
+
+[type=reset], [type=submit], button, html [type=button] {
   -webkit-appearance: button;
 }
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: .35em .625em .75em;
 }
+
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -140,48 +136,55 @@ legend {
   padding: 0;
   white-space: normal;
 }
+
 textarea {
   overflow: auto;
 }
-[type=checkbox],
-[type=radio] {
+
+[type=checkbox], [type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
+
+[type=number] {
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+    height: auto;
+  }
 }
+
 [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+
+  &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
 }
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: .54;
 }
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
+
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 * {
   box-sizing: inherit;
+
+  &:before, &:after {
+    box-sizing: inherit;
+  }
 }
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
+
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-weight: normal;
@@ -192,6 +195,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
 img {
   max-width: 100%;
   margin-left: 0;

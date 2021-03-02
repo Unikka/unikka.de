@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../../css/featureBox.module.css'
+import '../../assets/sass/layout.scss';
 
 const FeatureBoxContainer = ({children}) => (
-  <div className={styles.featureBoxContainer}>
+  <div className="featureBoxContainer">
     {children}
   </div>
 )

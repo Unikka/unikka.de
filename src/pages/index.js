@@ -10,6 +10,11 @@ const IndexPage = () => (
       <h1>Was wir anbieten</h1>
       <FeatureBoxContainer>
         <FeatureBoxItem
+          title="Beratung"
+          description="Individuelle Beratung bei Fragen zu Neos, Web-Applikationen, Accessibility und Digitalisierung."
+          icon={faUserTie}
+        />
+        <FeatureBoxItem
           title="Webseiten"
           description="Internetpräsenzen auf Basis des Open-Source CMS Neos."
           icon={faNeos}
@@ -18,11 +23,6 @@ const IndexPage = () => (
           title="Web Applikationen"
           description="Individuelle Umsetzung einer Webanwendung."
           icon={faPhp}
-        />
-        <FeatureBoxItem
-          title="Beratung"
-          description="Individuelle Beratung bei Fragen zu Neos, Web-Applikationen, Accessibility und Digitalisierung."
-          icon={faUserTie}
         />
         <FeatureBoxItem
           title="Mobile Apps"

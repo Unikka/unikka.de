@@ -21,14 +21,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Droid Sans', 'Droid Serif', 'Open Sans', 'Roboto', 'Ubuntu']
-        }
-      }
-    },
-    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
           rule: {

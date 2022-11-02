@@ -14,11 +14,25 @@ body {
   font-family: 'Helvetica', 'serif';
 }
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
 }
 
@@ -31,22 +45,31 @@ progress {
   vertical-align: baseline;
 }
 
-[hidden], template {
+[hidden],
+template {
   display: none;
 }
 
 a {
-  color: #89C53F;
+  color: #89c53f;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     outline-width: 0;
   }
 
   &.active {
-    color: #89C53F !important;
+    color: #89c53f !important;
+  }
+
+  &.invisible-link {
+    color: transparent;
+    background-color: transparent;
+    height: 0;
+    width: 0;
   }
 }
 
@@ -56,23 +79,25 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-b, mark {
+b,
+mark {
   background-color: #ff0;
   color: #000;
 }
 
-sub, sup {
+sub,
+sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 img {
@@ -83,7 +108,10 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-code, kbd, pre, figure {
+code,
+kbd,
+pre,
+figure {
   margin: 1em 40px;
 }
 
@@ -93,7 +121,11 @@ hr {
   overflow: visible;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font: inherit;
   margin: 0;
 }
@@ -102,31 +134,42 @@ optgroup {
   font-weight: 700;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-[type=reset], [type=submit], button, html [type=button] {
+[type='reset'],
+[type='submit'],
+button,
+html [type='button'] {
   -webkit-appearance: button;
 }
 
-[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
@@ -142,29 +185,32 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number] {
-  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+[type='number'] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
     height: auto;
   }
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 
-  &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
     -webkit-appearance: none;
   }
 }
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: .54;
+  opacity: 0.54;
 }
 
 ::-webkit-file-upload-button {
@@ -181,7 +227,8 @@ html {
 * {
   box-sizing: inherit;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     box-sizing: inherit;
   }
 }
@@ -191,10 +238,10 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
 img {

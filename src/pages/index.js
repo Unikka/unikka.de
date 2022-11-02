@@ -6,6 +6,9 @@ import { faUserTie } from '@fortawesome/free-solid-svg-icons'
 
 const IndexPage = () => (
   <Layout showHeaderTeaser={true}>
+    <a rel="me" href="https://neos.social/@markus306" className="invisible-link">
+      Mastodon
+    </a>
     <section>
       <h1>Was wir anbieten</h1>
       <FeatureBoxContainer>

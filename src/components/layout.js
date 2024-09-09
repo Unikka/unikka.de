@@ -23,7 +23,7 @@ const Layout = ({ children, showHeaderTeaser }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
@@ -32,19 +32,33 @@ const Layout = ({ children, showHeaderTeaser }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
           link={[
-            { rel: 'icon', type: 'image/png', href: `${icon32}`, sizes: '32x32' },
-            { rel: 'icon', type: 'image/png', href: `${icon16}`, sizes: '16x16' },
-            { rel: 'apple-touch-icon', type: 'image/png', href: `${appleTouchIcon}`, sizes: '180x180' }
-        ]}
+            {
+              rel: 'icon',
+              type: 'image/png',
+              href: `${icon32}`,
+              sizes: '32x32',
+            },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              href: `${icon16}`,
+              sizes: '16x16',
+            },
+            {
+              rel: 'apple-touch-icon',
+              type: 'image/png',
+              href: `${appleTouchIcon}`,
+              sizes: '180x180',
+            },
+          ]}
         >
           <html lang="en" />
         </Helmet>
-        <Header showHeaderTeaser={showHeaderTeaser} menuLinks={data.site.siteMetadata.menuLinks} />
-        <section
-          className="contentSection"
-        >
-          {children}
-        </section>
+        <Header
+          showHeaderTeaser={showHeaderTeaser}
+          menuLinks={data.site.siteMetadata.menuLinks}
+        />
+        <section className="contentSection">{children}</section>
       </>
     )}
   />

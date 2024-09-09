@@ -1,11 +1,11 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import {Navigation, Logo, Teaser} from '.'
+import { Navigation, Logo, Teaser } from '.'
 
-import '../../assets/sass/layout.scss';
+import '../../assets/sass/layout.scss'
 
 const Header = ({ showHeaderTeaser, menuLinks }) => {
-  const teaserElement = showHeaderTeaser === true ? <Teaser/> : null;
+  const teaserElement = showHeaderTeaser === true ? <Teaser /> : null
 
   return (
     <header className={`header ${showHeaderTeaser ? 'with-teaser' : ''}`}>
@@ -25,7 +25,7 @@ const Header = ({ showHeaderTeaser, menuLinks }) => {
         placeholder="blurred"
         layout="fullWidth"
         formats={['auto', 'webp', 'avif']}
-        transformOptions={{cropFocus: 'attention', fit: 'cover'}}
+        transformOptions={{ cropFocus: 'attention', fit: 'cover' }}
         className="headerImage"
       />
     </header>

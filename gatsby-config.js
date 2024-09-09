@@ -17,9 +17,32 @@ module.exports = {
     ]
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -30,33 +53,11 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'Unikka',
-        short_name: 'unikka',
-        start_url: '/',
-        background_color: '#89C53F',
-        theme_color: '#89C53F',
-        display: 'minimal-ui',
-        icon: 'src/images/unikka-icon.png', // This path is relative to the root of the site.
-      },
-    },
-    {
       resolve: 'gatsby-plugin-plausible',
       options: {
         domain: 'unikka.de',
       },
     },
     `gatsby-plugin-preact`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

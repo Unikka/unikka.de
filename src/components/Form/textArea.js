@@ -1,12 +1,9 @@
 import React from 'react'
-import '../../assets/sass/layout.scss';
+import '../../assets/sass/layout.scss'
 
-
-const TextArea = ({name, label, rows}) => (
+const TextArea = ({ name, label, rows }) => (
   <div className="formGroup">
-    <label>
-      {label}
-    </label>
+    <label>{label}</label>
     <textarea name={name} className="formControl" rows={rows} />
   </div>
 )

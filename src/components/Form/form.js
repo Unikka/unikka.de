@@ -1,10 +1,10 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 
-import '../../assets/sass/layout.scss';
+import '../../assets/sass/layout.scss'
 
 const Form = ({ name, children }) => {
-  const submitForm = async event => {
+  const submitForm = async (event) => {
     event.preventDefault()
     const form = event.target
     const data = getFormData(form)
@@ -26,7 +26,7 @@ const Form = ({ name, children }) => {
     }
   }
 
-  const getFormData = form => {
+  const getFormData = (form) => {
     const data = new FormData(form)
     const formData = {}
     data.forEach((value, key) => {

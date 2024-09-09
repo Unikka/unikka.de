@@ -1,8 +1,6 @@
 import React from 'react'
-import '../../assets/sass/layout.scss';
+import '../../assets/sass/layout.scss'
 
-const Row = ({children}) => (
-  <div className="formRow">{children}</div>
-)
+const Row = ({ children }) => <div className="formRow">{children}</div>
 
 export default Row

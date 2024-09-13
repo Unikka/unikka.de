@@ -3,11 +3,9 @@ import Layout from '../components/layout'
 import { FeatureBoxItem, FeatureBoxContainer } from '../components/FeatureBox/'
 import { faNeos, faReact, faPhp } from '@fortawesome/free-brands-svg-icons'
 import { faUserTie } from '@fortawesome/free-solid-svg-icons'
-import { Script } from 'gatsby'
 
 const IndexPage = () => (
   <Layout showHeaderTeaser={true}>
-    <Script defer data-domain="unikka.de" src="https://akksogs8sw4g44sg04wccg8w.65.109.138.201.sslip.io/js/script.js" />
     <a
       rel="me"
       href="https://neos.social/@markus306"

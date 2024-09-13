@@ -52,12 +52,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-plausible',
-      options: {
-        domain: 'unikka.de',
-      },
-    },
     `gatsby-plugin-preact`,
   ],
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Script } from 'gatsby'
 
 const Imprint = () => (
   <Layout>
+    <Script defer data-domain="unikka.de" src="https://akksogs8sw4g44sg04wccg8w.65.109.138.201.sslip.io/js/script.js" />
     <section>
       <h1>Impressum</h1>
       <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>

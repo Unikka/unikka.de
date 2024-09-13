@@ -42,3 +42,9 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export function Head() {
+  return (
+    <script defer data-domain="unikka.de" src="https://akksogs8sw4g44sg04wccg8w.65.109.138.201.sslip.io/js/script.js"></script>
+  )
+}
